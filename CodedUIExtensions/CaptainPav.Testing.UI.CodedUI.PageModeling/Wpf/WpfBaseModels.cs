@@ -8,9 +8,9 @@ namespace CaptainPav.Testing.UI.CodedUI.PageModeling.Wpf
     public abstract class WpfPageModelBase<T> : PageModelBase<T> where T : WpfControl
     {
         protected readonly WpfWindow parent;
-        protected WpfPageModelBase(WpfWindow window)
+        protected WpfPageModelBase(WpfWindow bw)
         {
-            parent = window;
+            parent = bw;
         }
 
         protected WpfWindow DocumentWindow
